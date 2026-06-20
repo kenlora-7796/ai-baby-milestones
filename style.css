@@ -1004,48 +1004,39 @@ section,
 }
 
 @media (max-width: 768px) {
-  #free-tracker {
-    overflow-x: hidden;
-  }
-
-  #free-tracker .split {
-    display: grid;
-    grid-template-columns: 1fr !important;
-    gap: 28px;
-  }
-
-  #free-tracker .feature-list {
-    grid-template-columns: 1fr !important;
-    width: 100%;
-  }
-
+  #free-tracker .container,
+  #free-tracker .split,
+  #free-tracker .signup-card,
+  #free-tracker .feature-list,
   #free-tracker .feature-list div {
-    width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
   }
 
   #free-tracker .signup-card {
-    width: 100% !important;
-    max-width: 100% !important;
+    padding: 24px 18px !important;
   }
 
-  #free-tracker .signup-card .button,
-  #free-tracker button {
+  #free-tracker input,
+  #free-tracker select,
+  #free-tracker textarea,
+  #free-tracker button,
+  #free-tracker .button {
     width: 100% !important;
-    white-space: normal;
+    max-width: 100% !important;
+    min-width: 0 !important;
   }
 
   #free-tracker h2 {
-    font-size: clamp(2rem, 8vw, 2.8rem) !important;
-    line-height: 1.15 !important;
+    font-size: clamp(1.8rem, 7vw, 2.4rem) !important;
     overflow-wrap: break-word;
   }
 
-  #free-tracker .hero-image,
-  #free-tracker img {
-    width: 100% !important;
-    max-width: 100% !important;
-    max-height: 420px;
-    object-fit: cover;
-    object-position: center;
+  #free-tracker .feature-list {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
   }
 }
+
