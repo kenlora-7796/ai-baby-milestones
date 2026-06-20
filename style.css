@@ -1002,3 +1002,50 @@ section,
     display: flex;
   }
 }
+
+@media (max-width: 768px) {
+  #free-tracker {
+    overflow-x: hidden;
+  }
+
+  #free-tracker .split {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 28px;
+  }
+
+  #free-tracker .feature-list {
+    grid-template-columns: 1fr !important;
+    width: 100%;
+  }
+
+  #free-tracker .feature-list div {
+    width: 100%;
+  }
+
+  #free-tracker .signup-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #free-tracker .signup-card .button,
+  #free-tracker button {
+    width: 100% !important;
+    white-space: normal;
+  }
+
+  #free-tracker h2 {
+    font-size: clamp(2rem, 8vw, 2.8rem) !important;
+    line-height: 1.15 !important;
+    overflow-wrap: break-word;
+  }
+
+  #free-tracker .hero-image,
+  #free-tracker img {
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: 420px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
