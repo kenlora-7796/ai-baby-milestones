@@ -1039,4 +1039,23 @@ section,
     grid-template-columns: 1fr !important;
   }
 }
+@media (max-width: 768px) {
+  #free-tracker .tracker-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    border-radius: 20px;
+  }
+
+  #free-tracker .tracker-image img,
+  #free-tracker .hero-image {
+    width: 100% !important;
+    height: 360px !important;
+    max-height: 360px !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block !important;
+    border-radius: 20px;
+  }
+}
 
